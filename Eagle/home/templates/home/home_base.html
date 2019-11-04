@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"  type="text/css" href="/media/image/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="/media/slick/slick.css"/>
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="/media/slick/slick-theme.css"/>
     <!--- Meta --->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -94,7 +97,7 @@
                 <div class="storage-logo">
                     <img src="/media/image/storage.svg" style="width:100px;height:121px;">
                 </div>
-                <p>Give you a space for your creation and important knowledge with our advanced tools</p>
+                <p class="storage-text">Give you a space for your creation and important knowledge with our advanced tools</p>
                 <div class="learn-more-storage">
                     <a href="#home" class="storage">Learn more</a>
                 </div>
@@ -108,7 +111,7 @@
             <div class="tools-logo">
                 <img src="/media/image/tools.jpg" style="width:100px;height:65px;">
             </div>
-            <p>Various of tools to edit, customize your documents</p>
+            <p class="tools-text">Various of tools to edit, customize your documents</p>
             <div class="learn-more-tools">
                 <a href="#home" class="tools">Learn more</a>
             </div>
@@ -122,10 +125,56 @@
             <div class="search-logo">
                 <img src="media/image/search.jpg" style="width:100px;height:100px;">
             </div>
-            <p> Easily searching and extracting keywords</p>
+            <p class="search-text"> Easily searching and extracting keywords</p>
             <div class="learn-more-searching">
                 <a href="#home" class="searching">Learn more</a>
             </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid padding feature-background-phone">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h3 class="display-4">Services</h3>
+        </div>
+        <hr>
+    </div>
+    <div class="slider slider-nav text-center">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <div class="frame jumbotron" id="frame-phone">
+                <center class="storage-logo">
+                    <img src="/media/image/storage.svg" style="width:100px;height:121px;">
+                </center>
+                <p class="storage-text">Give you a space for your creation and important knowledge with our advanced tools</p>
+                <div class="learn-more-storage">
+                    <a href="#home" class="storage">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">    
+        <div class="frame jumbotron" id="frame-phone">
+            <div class="tools-logo">
+                <img src="/media/image/tools.jpg" style="width:100px;height:65px; margin: auto;">
+            </div>
+            <p class="tools-text">Various of tools to edit, customize your documents</p>
+            <div class="learn-more-tools">
+                <a href="#home" class="tools">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="frame jumbotron" id="frame-phone">
+            <div class="search-logo">
+                <img src="media/image/search.jpg" style="width:100px;height:100px; margin: auto;">
+            </div>
+            <p class="search-text"> Easily searching and extracting keywords</p>
+            <div class="learn-more-searching">
+                <a href="#home" class="searching">Learn more</a>
             </div>
         </div>
     </div>
@@ -135,35 +184,27 @@
 
 <!--- footer -->
 <footer>
-
 <div class="container-fluid padding phone">
-<div class="panel panel-default">
-<div role="button" class="collapse-footer collapsed company" data-toggle="collapse" href="#footer-list-1">Company
-<div class="panel-body">
-    <p id="footer-list-1" class="panel-collapse collapse" role="tabpanel">About us</p>
-    <p id="footer-list-1" class="panel-collapse collapse" role="tabpanel">Blog</p>
-    <p id="footer-list-1" class="panel-collapse collapse" role="tabpanel">Resource</p>
-</div>
-</div>
-</div>
-
-<div class="panel panel-default">
-<div class="panel-body collapse-footer collapsed contact" data-toggle="collapse" href="#footer-list-2">Contact
-    <p id="footer-list-2" class="collapse">trieuphong328@gmail.com</p>
-    <div id="footer-list-2" class="col-12 social padding">
-        <a class="collapse" href="#"><i class="fa fa-facebook"></i></a>
-        <a class="collapse" href="#"><i class="fa fa-instagram"></i></a>
-        <a class="collapse" href="#"><i class="fa fa-youtube-play"></i></a>
+    <button class="collapsible company">Company</button>
+    <div class="content">
+        <p id="footer-list">About us</p>
+        <p id="footer-list">Blog</p>
+        <p id="footer-list">Resource</p>
     </div>
-</div>
-</div>
-
-<div class="panel panel-default">
-<div class="panel-body collapse-footer collapsed documents" data-toggle="collapse" href="#footer-list-3">Documents
-    <p id="footer-list-3" class="collapse">Guidelines</p>
-    <p id="footer-list-3" class="collapse">Term & Policies</p>
-</div>
-</div>
+    <button class="collapsible contact">Contact</button>
+    <div class="content">
+        <p id="footer-list">trieuphong328@gmail.com</p>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+    </div>
+    <button class="collapsible documents">Documents</button>
+    <div class="content">
+        <p id="footer-list">Guidelines</p>
+        <p id="footer-list">Term & Policies</p>
+    </div>
 </div>
 
 <div class="container-fluid padding desktop">
@@ -188,7 +229,6 @@
         <p id="footer-list">Guidelines</p>
         <p id="footer-list">Term & Policies</p>
     </div>
-    <hr>
 </div>
 </div>
 
@@ -197,6 +237,30 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("pointer");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/media/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slider-nav').slick();
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare>.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
